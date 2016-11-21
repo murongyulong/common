@@ -1,8 +1,8 @@
 package dock
 
 import (
-	"github.com/dinp/common/model"
-	"github.com/fsouza/go-dockerclient"
+	"github.com/smartcaas/common/model"
+	"github.com/smartcaas/go-dockerclient"
 	"log"
 	"strings"
 )
