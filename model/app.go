@@ -17,13 +17,13 @@ type App struct {
 	InstanceCnt int
 	Image       string
 	Status      int
-	Port        int
+	Port        string
 	Mount       string
 }
 
 func (this *App) String() string {
 	return fmt.Sprintf(
-		"<Name:%s, Memory:%d, InstanceCnt:%d, Image:%s, Status:%d, Port:%d, Mount:%s>",
+		"<Name:%s, Memory:%d, InstanceCnt:%d, Image:%s, Status:%d, Port:%s, Mount:%s>",
 		this.Name,
 		this.Memory,
 		this.InstanceCnt,
