@@ -30,6 +30,6 @@ func (this *App) String() string {
 		this.Image,
 		this.Status,
 		this.Port,
-		this.Mount
+		this.Mount,
 	)
 }
