@@ -1,7 +1,7 @@
 package dock
 
 import (
-	"github.com/murongyulong/common/model"
+	"github.com/murongyulong/common/tree/master/model"
 	"github.com/smartcaas/go-dockerclient"
 	"log"
 	"strings"
