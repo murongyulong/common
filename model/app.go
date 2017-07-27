@@ -19,11 +19,12 @@ type App struct {
 	Status      int
 	Port        string
 	Mount       string
+	App	    string
 }
 
 func (this *App) String() string {
 	return fmt.Sprintf(
-		"<Name:%s, Memory:%d, InstanceCnt:%d, Image:%s, Status:%d, Port:%s, Mount:%s>",
+		"<Name:%s, Memory:%d, InstanceCnt:%d, Image:%s, Status:%d, Port:%s, Mount:%s, App:%s>",
 		this.Name,
 		this.Memory,
 		this.InstanceCnt,
@@ -31,5 +32,6 @@ func (this *App) String() string {
 		this.Status,
 		this.Port,
 		this.Mount,
+		this.App,
 	)
 }
