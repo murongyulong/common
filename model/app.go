@@ -20,12 +20,11 @@ type App struct {
 	Port        string
 	Mount       string
 	CPUShares   int
-	CPUSet      string
 }
 
 func (this *App) String() string {
 	return fmt.Sprintf(
-		"<Name:%s, Memory:%d, InstanceCnt:%d, Image:%s, Status:%d, Port:%s, Mount:%s, CPUShares:%d, CPUSet:%s>",
+		"<Name:%s, Memory:%d, InstanceCnt:%d, Image:%s, Status:%d, Port:%s, Mount:%s, CPUShares:%d>",
 		this.Name,
 		this.Memory,
 		this.InstanceCnt,
@@ -34,6 +33,5 @@ func (this *App) String() string {
 		this.Port,
 		this.Mount,
 		this.CPUShares,
-		this.CPUSet,
 	)
 }
